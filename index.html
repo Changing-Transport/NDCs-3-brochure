@@ -273,8 +273,6 @@ text{font-family:var(--ct-font)}
   .dark h2,.dark .lede,.dark .q,.dark .casc span{color:#000!important}
   .rv{opacity:1!important;transform:none!important}
   .more{max-height:none!important}
-  body.print-single .page{display:none!important}
-  body.print-single .page.print-target{display:flex!important}
 }
 @media (max-width:640px){
   .page{padding:4.5rem 0 3.5rem;min-height:auto}
@@ -294,7 +292,7 @@ text{font-family:var(--ct-font)}
 <div class="toast" id="toast">Copied</div>
 <div class="pgnum" id="pgnum"></div>
 <div class="dl" id="dl">
-  <button class="dl-btn" id="dlPage" title="Print only this page">Print page</button>
+  <button class="dl-btn" id="dlPage" title="Download this page as a PDF">Page PDF</button>
   <button class="dl-btn" id="dlBtn" title="Download the whole brochure as a PDF">Full PDF</button>
 </div>
 
@@ -307,7 +305,7 @@ text{font-family:var(--ct-font)}
     <p class="cover-sub rv">What countries promised, and what they left out.</p>
     <div class="cover-stats rv">
       <div class="cs"><b>128</b><span>third generation NDCs submitted by September 2026</span></div>
-      <div class="cs"><b>26</b><span>third generation NDCs set a sector wide transport GHG mitigation target, yet none of the ten biggest emitters set one</span></div>
+      <div class="cs"><b>26</b><span>third generation NDCs set a sector wide transport GHG mitigation target, yet among the twenty biggest emitters only Thailand has one</span></div>
       <div class="cs"><b>1,138</b><span>transport actions. Electrification is the most common approach</span></div>
       <div class="cs"><b>17</b><span>third generation NDCs link freight and rail in one action, but none measures them in emissions</span></div>
       <div class="cs"><b>82</b><span>third generation NDCs write about transport adaptation, most of it aimed at making roads and infrastructure stronger</span></div>
@@ -342,7 +340,7 @@ text{font-family:var(--ct-font)}
       <div>
         <p class="q rv">Is transport getting more attention?</p>
         <h2 class="rv">Transport has <em>arrived</em> on paper.</h2>
-        <p class="lede rv">This is the generation with the most transport content yet. 93% third generation NDCs now mention transport in a target or action.</p>
+        <p class="lede rv">This is the generation with the most transport content yet. 93% of third generation NDCs now mention transport in a target or action.</p>
         <p class="hint rv">Explore <b>hover or tap any line</b></p>
         <ul class="evidence rv">
           <li><button data-chart="f1_gen"><b>55%</b><span>set a transport target of some kind, up from 23% in the first generation</span><s>&#8594;</s></button></li>
@@ -368,7 +366,7 @@ text{font-family:var(--ct-font)}
 
 <!-- 03 BIGGEST EMITTERS -->
 <section class="page dark" data-label="Biggest emitters" data-fig="f3" data-default="f3_top20"
-  data-copy="Message 2 of 5. The targets sit where the emissions are not generated. Only one of the world's twenty biggest transport emitters – Thailand – has set a transport GHG mitigation target. All 26 countries that have made that commitment add up to just 3% of global transport emissions. Africa holds more of those 26 targets than any other region, ten of them. Source: Is Transport on Track for 1.5C, GIZ and SLOCAT, September 2026.">
+  data-copy="Message 2 of 5. The targets sit where the emissions are not. Only one of the world's twenty biggest transport emitters – Thailand – has set a transport GHG mitigation target. All 26 countries that have made that commitment add up to just 3% of global transport emissions. Yet their commitments matter: they offer a chance to build a low carbon transport system from the start. Source: Is Transport on Track for 1.5C, GIZ and SLOCAT, September 2026.">
   <div class="wrap">
     <p class="eyebrow rv">Message 02 &nbsp;&nbsp; Biggest emitters</p>
     <div class="grid g-5-7">
@@ -378,7 +376,7 @@ text{font-family:var(--ct-font)}
         <p class="lede rv">Only one of the world's twenty biggest transport emitters – Thailand – has set a transport GHG mitigation target. All 26 countries that have made that commitment add up to just 3% of global transport emissions. Yet their commitments matter: they offer a chance to build a low carbon transport system from the start. </p>
         <p class="hint rv">Explore <b>hover or tap any line</b></p>
         <ul class="evidence rv">
-          <li><button data-chart="f3_top20"><b>1</b><span>largest transport emitters has a target: Thailand, which is ranked twentieth</span><s>&#8594;</s></button></li>
+          <li><button data-chart="f3_top20"><b>1</b><span>of the twenty largest transport emitters has a target: Thailand, which is ranked twentieth</span><s>&#8594;</s></button></li>
           <li><button data-chart="f3_region"><b>26</b><span>countries with a sector wide transport target, which are responsible for just 3% of total transport emissions</span><s>&#8594;</s></button></li>
         </ul>
         <div class="acts rv">
@@ -386,7 +384,7 @@ text{font-family:var(--ct-font)}
           <button class="act" data-copy-btn>Copy this message</button>
         </div>
         <div class="more">
-          <p>Among the 26 countries with a sector wide transport target. Africa: Burkina Faso, Eswatini, Guinea, Liberia, Malawi, Mauritania, Mauritius, Seychelles, Sierra Leone and Somalia; Asia: Bangladesh, Georgia, Kazakhstan, Nepal, Sri Lanka, Thailand and the United Arab Emirates; Europe: Andorra, the Republic of Moldova and Switzerland; Latin America and the Caribbean: Belize, Chile and Saint Lucia; Oceania: Samoa, Tonga and Vanuatu.</p>
+          <p>The 26 countries with a sector wide transport target, by region. Africa: Burkina Faso, Eswatini, Guinea, Liberia, Malawi, Mauritania, Mauritius, Seychelles, Sierra Leone and Somalia; Asia: Bangladesh, Georgia, Kazakhstan, Nepal, Sri Lanka, Thailand and the United Arab Emirates; Europe: Andorra, the Republic of Moldova and Switzerland; Latin America and the Caribbean: Belize, Chile and Saint Lucia; Oceania: Samoa, Tonga and Vanuatu.</p>
         </div>
       </div>
       <div><div class="figure rv" id="f3">
@@ -436,7 +434,7 @@ text{font-family:var(--ct-font)}
 
 <!-- 05 GAPS: FREIGHT AND RAIL -->
 <section class="page dark" data-label="Gaps" data-fig="f5" data-default="f5_reach"
-  data-copy="Message 4 of 5. Freight and rail run in parallel, not together. Freight causes 43% of transport emissions, and 48 of 128 NDCs include a freight action. Rail, the cleanest mode in the sector, appears in 49 of 128 NDCs, almost the same rate. Only 34 of 128 NDCs act on both, and just 17 combine them into a single measure such as shifting freight from road to rail. Source: Is Transport on Track for 1.5C, GIZ and SLOCAT, September 2026.">
+  data-copy="Message 4 of 5. Freight and rail run in parallel, not together. Freight causes 43% of transport emissions, and 48 of 128 NDCs include a freight action. Rail, the cleanest mode in the sector, appears in 49 of 128 NDCs, almost the same rate. Only 34 of 128 NDCs act on both, and just 17 link them in a single action, such as shifting freight from road to rail. Source: Is Transport on Track for 1.5C, GIZ and SLOCAT, September 2026.">
   <div class="wrap">
     <p class="eyebrow rv">Message 04 &nbsp;&nbsp; Gaps</p>
     <div class="grid g-5-7">
@@ -447,7 +445,7 @@ text{font-family:var(--ct-font)}
         <p class="hint rv">Explore <b>hover or tap any line</b></p>
         <ul class="evidence rv">
           <li><button data-chart="f5_reach"><b>48 vs 49</b><span>NDCs act on freight and on rail, at nearly the same rate</span><s>&#8594;</s></button></li>
-          <li><button data-chart="f5_overlap"><b>17</b><span>NDCs combine freight and rail in a single action</span><s>&#8594;</s></button></li>
+          <li><button data-chart="f5_overlap"><b>17</b><span>NDCs link freight and rail in a single action</span><s>&#8594;</s></button></li>
         </ul>
         <div class="acts rv">
           <button class="act" data-more>Read more</button>
@@ -468,7 +466,7 @@ text{font-family:var(--ct-font)}
 
 <!-- 06 ADAPTATION -->
 <section class="page" data-label="Adaptation" data-fig="f6" data-default="f6_infra"
-  data-copy="Message 5 of 5. Adaptation mostly means stronger infrastructure, and it rarely means a promise. 82 of 128 NDCs write about adapting transport to climate impacts, and 68 of those 82 focus specifically on roads or other infrastructure resilience, through an action, a target, or both. 162 of 267 adaptation actions, 61 percent, are structural and technical, largely climate-proofing roads and other physical infrastructure rather than changing how networks are planned or operated. Source: Is Transport on Track for 1.5C, GIZ and SLOCAT, September 2026.">
+  data-copy="Message 5 of 5. Adaptation mostly means stronger infrastructure. 82 NDCs write about transport adaptation, and 68 of them focus on physical infrastructure, climate proofing roads, bridges and ports. Few describe transport itself responding to a crisis, such as rules for evacuation routes or vehicles kept ready for emergencies. 162 of 267 adaptation actions, 61 percent, are structural and technical. Source: Is Transport on Track for 1.5C, GIZ and SLOCAT, September 2026.">
   <div class="wrap">
     <p class="eyebrow rv">Message 05 &nbsp;&nbsp; Adaptation</p>
     <div class="grid g-6-6">
@@ -478,8 +476,8 @@ text{font-family:var(--ct-font)}
         <p class="lede rv">82 NDCs write about transport adaptation, and 68 of them focus on physical infrastructure, climate proofing roads, bridges and ports. Few describe transport itself responding to a crisis, such as rules for evacuation routes or vehicles kept ready for emergencies. </p>
         <p class="hint rv">Explore <b>hover or tap any line</b></p>
         <ul class="evidence rv">
-          <li><button data-chart="f6_infra"><b>68</b><span>NDCs addressing adaptation focus on climate-proofed roads</span><s>&#8594;</s></button></li>
-          <li><button data-chart="f6_cat"><b>162</b><span>adaptation actions are structural, largely climate proofing roads</span><s>&#8594;</s></button></li>
+          <li><button data-chart="f6_infra"><b>68</b><span>NDCs addressing adaptation focus on physical infrastructure</span><s>&#8594;</s></button></li>
+          <li><button data-chart="f6_cat"><b>162</b><span>adaptation actions are structural and technical, mostly physical infrastructure</span><s>&#8594;</s></button></li>
           <li><button data-chart="f6_targets"><b>19</b><span> NDCs set an adaptation target, more than double the second generation's share</span><s>&#8594;</s></button></li>
         </ul>
         <div class="acts rv">
@@ -501,7 +499,7 @@ text{font-family:var(--ct-font)}
 
 <!-- CONCLUSION -->
 <section class="page" data-label="Conclusion"
-  data-copy="Is transport on track for 1.5°C? Not yet. Current NDCs point to 2.3 to 2.5°C of warming. To stay in line with 1.5°C, transport emissions must fall at least 28% below 2019 levels by 2035. The roads, railways and ports built today will shape those emissions for decades. How much was committed. Coverage: 119 of 128 third generation NDCs now write about transport. Biggest emitters: Not one of the ten largest transport emitters has a target. The 26 that do cover only about 3% of global transport emissions, most measured against a rising BAU scenario. What was committed to. Electrification: In 102 of 128 third generation NDCs, but two thirds of its actions name no instrument. Gaps: Freight causes 43% of transport emissions, yet only 17 NDCs propose freight linked to rail actions. Adaptation: 82 NDCs write about transport adaptation, mostly proposing stronger infrastructure. Sources: Is Transport on Track for 1.5°C, GIZ and SLOCAT, September 2026, with EDGAR and IPCC AR6; UNEP Limiting Overshoot report, 2026.">
+  data-copy="Is transport on track for 1.5°C? Not yet. Current NDCs point to 2.3 to 2.5°C of warming. To stay in line with 1.5°C, transport emissions must fall at least 28% below 2019 levels by 2035. The roads, railways and ports built today will shape those emissions for decades. How much was committed. Coverage: 119 of 128 third generation NDCs now write about transport. Biggest emitters: Only Thailand, among the twenty biggest transport emitters, has a target. The 26 countries with one cover only about 3% of global transport emissions, most measured against a rising BAU scenario. What was committed to. Electrification: Electrification appears in 102 of 128 third generation NDCs, but two thirds of its actions name no instrument. Gaps: Freight causes 43% of transport emissions, yet only 17 NDCs link freight and rail in one action. Adaptation: 82 NDCs write about transport adaptation, mostly proposing stronger infrastructure. Sources: Is Transport on Track for 1.5°C, GIZ and SLOCAT, September 2026, with EDGAR and IPCC AR6; UNEP Limiting Overshoot report, 2026.">
   <div class="wrap">
     <p class="eyebrow rv">Conclusion</p>
     <div class="concl rv">
@@ -519,12 +517,12 @@ text{font-family:var(--ct-font)}
         <p class="concl-band t">How much was committed</p>
         <div class="concl-row two">
           <div class="cm t"><span class="n">01</span><span class="k">Coverage</span><p>119 of 128 third generation NDCs now write about transport.</p></div>
-          <div class="cm t"><span class="n">02</span><span class="k">Biggest emitters</span><p>Not one of the ten largest transport emitters has a target. The 26 that do cover only about 3% of global transport emissions, most measured against a rising BAU scenario.</p></div>
+          <div class="cm t"><span class="n">02</span><span class="k">Biggest emitters</span><p>Only Thailand, among the twenty biggest transport emitters, has a target. The 26 countries with one cover only about 3% of global transport emissions, most measured against a rising BAU scenario.</p></div>
         </div>
         <p class="concl-band e">What was committed to</p>
         <div class="concl-row three">
-          <div class="cm e"><span class="n">03</span><span class="k">Electrification</span><p>In 102 of 128 third generation NDCs, but two thirds of its actions name no instrument.</p></div>
-          <div class="cm e"><span class="n">04</span><span class="k">Gaps</span><p>Freight causes 43% of transport emissions, yet only 17 NDCs propose freight linked to rail actions.</p></div>
+          <div class="cm e"><span class="n">03</span><span class="k">Electrification</span><p>Electrification appears in 102 of 128 third generation NDCs, but two thirds of its actions name no instrument.</p></div>
+          <div class="cm e"><span class="n">04</span><span class="k">Gaps</span><p>Freight causes 43% of transport emissions, yet only 17 NDCs link freight and rail in one action.</p></div>
           <div class="cm e"><span class="n">05</span><span class="k">Adaptation</span><p>82 NDCs write about transport adaptation, mostly proposing stronger infrastructure.</p></div>
         </div>
       </div>
@@ -560,7 +558,7 @@ text{font-family:var(--ct-font)}
         </div>
         <div class="cta rv">
           <h3>The full report</h3>
-          <p>Is Transport on Track for 1.5°C report carries country tables, the target by target detail and the full methodology.</p>
+          <p>The Is Transport on Track for 1.5°C report carries country tables, the target by target detail and the full methodology.</p>
           <a href="https://changing-transport.org/tracker" target="_blank" rel="noopener">Read the full report</a>
         </div>
         <div class="endlock rv" id="endlock"></div>
@@ -835,15 +833,15 @@ f3_region:{t:'Where the emissions are, and where the targets are',u:'transport e
   note.classList.add('fade-in'); s.append(note);
   return s}},
 
-f4_instrument:{t:'Electrification, reach against detail',u:'292 actions',src:SRC_T,d:()=>stack([
+f4_instrument:{t:'Electrification, intention against detail',u:'292 actions',src:SRC_T,d:()=>stack([
   {k:'No instrument named',n:197,c:E,s:'197 actions'},
   {k:'Instrument named',n:95,c:'var(--quiet)',t:'var(--ink)',s:'95 actions'}],
-  {top:'Appears in 102 of 128 NDCs, more than any other approach',
+  {top:'Two thirds of electrification actions name no instrument',
    note:'An instrument is the incentive, standard or programme behind the intention'})},
 f4_reach:{t:'Most common mitigation approaches',u:'of 128 NDCs',src:SRC_T,d:()=>hbar([
   {l:'Electrification',v:102,c:E,hi:true},
-  {l:'Public transport',v:73,c:T},
   {l:'Energy efficiency',v:77,c:P,o:.85},
+  {l:'Public transport',v:73,c:T},
   {l:'Alternative fuels',v:68,c:P,o:.7},
   {l:'Aviation and maritime',v:40,c:P,o:.55},
   {l:'Active mobility',v:35,c:P,o:.4}],
@@ -865,14 +863,14 @@ f5_overlap:{t:'How often the two are linked',u:'of 128 NDCs',src:SRC_T,d:()=>hba
 
 f6_infra:{t:'What adaptation focuses on, by country',u:'of 82 NDCs addressing adaptation',src:SRC_T,d:()=>hbar([
   {l:'Address transport adaptation',v:82,c:'var(--quiet)'},
-  {l:'Focus on roads or infrastructure',v:68,d:'68 (83%)',c:E,hi:true}],
-  {max:82,labelW:220,rowH:56,note:'Counted once per country, through an action, a target, or both'})},
+  {l:'Focus on physical infrastructure',v:68,d:'68 (83%)',c:E,hi:true}],
+  {max:82,labelW:220,rowH:56,note:'Counted once per country, from its structural and technical adaptation actions'})},
 f6_cat:{t:'What adaptation actually means',u:'267 adaptation actions',src:SRC_T,d:()=>hbar([
   {l:'Structural and technical',v:162,d:'61%',c:E,hi:true},
   {l:'Institutional and regulatory',v:63,d:'23%',c:P},
   {l:'Informational and educational',v:34,d:'13%',c:T},
   {l:'Other',v:8,d:'3%',c:'var(--quiet)'}],
-  {labelW:200,rowH:42,note:'Structural and technical means largely climate proofing roads'})},
+  {labelW:200,rowH:42,note:'Structural and technical means physical works, such as climate proofing roads, bridges and ports'})},
 f6_targets:{t:'NDCs setting a transport adaptation target',u:'share of NDCs',src:SRC_T,d:()=>gens(
   [{k:'sets an adaptation target',c:T,vals:[1,5,15]}],
   {max:20,sub:''})}
@@ -956,7 +954,7 @@ if(dn){
     ['26','countries that set a transport GHG mitigation target covering the whole sector'],
     ['1,138','transport mitigation actions'],
     ['17','NDCs link freight and rail in one action'],
-    ['82','NDCs write about transport adapation']];
+    ['82','NDCs write about transport adaptation']];
   const w=560,rowH=46,H=rows.length*rowH+6,s=mk(w,H);
   rows.forEach(([n,t],i)=>{
     const y=i*rowH;
@@ -1005,16 +1003,7 @@ const JPEG_QUALITY=0.94;
 const dlBtn=document.getElementById('dlBtn');
 const dlPage=document.getElementById('dlPage');
 dlBtn.addEventListener('click',()=>exportPDF(pages));
-dlPage.addEventListener('click',()=>{
-  const p=pages[currentPageIndex];
-  document.body.classList.add('print-single');
-  p.classList.add('print-target');
-  window.print();
-});
-window.addEventListener('afterprint',()=>{
-  document.body.classList.remove('print-single');
-  pages.forEach(pg=>pg.classList.remove('print-target'));
-});
+dlPage.addEventListener('click',()=>exportPDF([pages[currentPageIndex]]));
 
 async function exportPDF(targets){
   const controls=[dlBtn,dlPage];
@@ -1027,7 +1016,7 @@ async function exportPDF(targets){
 
   for(let idx=0; idx<targets.length; idx++){
     const p=targets[idx];
-    dlBtn.textContent = targets.length>1 ? `${idx+1} / ${targets.length}` : 'Rendering';
+    if(targets.length>1) dlBtn.textContent=`${idx+1} / ${targets.length}`; else dlPage.textContent='Rendering';
 
     // default state: revealed, default chart, read more closed
     p.classList.add('is-in');
@@ -1068,9 +1057,11 @@ async function exportPDF(targets){
   }
 
   document.body.classList.remove('exporting');
-  pdf.save(PDF_NAME);
+  const one=targets.length===1 ? (targets[0].getAttribute('data-label')||'Page') : null;
+  pdf.save(one ? PDF_NAME.replace('.pdf',' ('+one+').pdf') : PDF_NAME);
   controls.forEach(b=>b.disabled=false);
   dlBtn.textContent='Full PDF';
+  dlPage.textContent='Page PDF';
 }
 deck.addEventListener('scroll',()=>{
   prog.style.width=(deck.scrollTop/(deck.scrollHeight-deck.clientHeight)*100)+'%';
